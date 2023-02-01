@@ -3,12 +3,12 @@ body {
     color: rgb(45, 45, 45);
     padding: 10px;
     font-family: arial;
+    background-image: url("https://cdnb.artstation.com/p/assets/images/images/029/049/265/large/matt-bagshaw-interior04-norobcomedium.jpg?1596300268")
 }
 #all-contents {
   max-width: 800px;
     margin: auto;
 }
-
 
 /* navigation menu */
 nav {
