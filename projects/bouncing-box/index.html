@@ -8,7 +8,7 @@
 		.box {
 			width: 70px;
 			height: 70px;
-			background-color: teal;
+			background-color: rgba(255, 255, 255, 0.932);
 			font-size: 300%;
 			text-align: center;
 			user-select: none;
@@ -20,6 +20,7 @@
 		.board{
 			height: 100vh;
 		}
+
 	</style>
 	<!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
 
@@ -77,8 +78,12 @@
 			moveBoxTo(positionX)
 				
 				
-				
-
+				if (positionX > boardWidth) {
+					speed = -speed;
+				}
+				if (positionX < 0) {
+					speed = -speed;
+				}
 			};
 
 			/* 
@@ -89,7 +94,7 @@
 			function handleBoxClick() {
 				positionX = 0
 				points = points + 1
-				speed = speed + 10
+				speed = speed + 5
 				
 				changeBoxText(points)
 			
